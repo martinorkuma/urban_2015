@@ -1,0 +1,110 @@
+== File preview ==
+Author	Year	Region	Taxa	Year_Pred	Endemic	Model_Type	Disp_Mod	Threshold	N_Ext	Total_N	Percent	Weight	Logit	Pre_Ind_Rise	Temperature_Model_Scale
+McDonald	1992	NAmerica	mammals	2050	Y	SAR	None	1	3	14	0.214285714	19	-1.299282984	3.6	Global
+McDonald	1992	NAmerica	mammals	2050	Y	SAR	None	0.95	3	14	0.214285714	19	-1.299282984	3.6	Global
+== Delimiter check (tab vs comma) ==
+Header tabs=15 commas=0
+Treating as TSV
+== Basic row/col counts ==
+columns: 16
+rows: 1208
+header: ['Author', 'Year', 'Region', 'Taxa', 'Year_Pred', 'Endemic', 'Model_Type', 'Disp_Mod', 'Threshold', 'N_Ext', 'Total_N', 'Percent', 'Weight', 'Logit', 'Pre_Ind_Rise', 'Temperature_Model_Scale']
+== Missingness by column (top) ==
+Disp_Mod                   0.289147
+Threshold                  0.040597
+Pre_Ind_Rise               0.008285
+Temperature_Model_Scale    0.008285
+Author                     0.000000
+Year                       0.000000
+Region                     0.000000
+Taxa                       0.000000
+Year_Pred                  0.000000
+Endemic                    0.000000
+Model_Type                 0.000000
+N_Ext                      0.000000
+Total_N                    0.000000
+Percent                    0.000000
+Weight                     0.000000
+Logit                      0.000000
+== Quick categorical levels ==
+
+ Region 
+ Region
+Europe                 419
+NAmerica               191
+AustraliaNewZealand    190
+World                  157
+Africa                 107
+Asia                    54
+SAmerica                34
+Ocean                   28
+Whemisphere             17
+Arctic                  10
+
+ Taxa 
+ Taxa
+plants                     420
+Inverts                    221
+birds                      167
+mammals                    131
+reptiles                   103
+amphibians                  42
+fish                        37
+animals                     32
+birdsmammalsbutterflies     18
+butterflyplant              18
+birds                       10
+vertebrates                  8
+
+ Endemic 
+ Endemic
+N    626
+Y    581
+
+ Model_Type 
+ Model_Type
+SDM            998
+Mechanistic    103
+SAR             84
+Expert          22
+
+ Disp_Mod 
+ Disp_Mod
+Universal       705
+SpSpecific      119
+Contiguous       21
+Intermediate     13
+
+ Temperature_Model_Scale 
+ Temperature_Model_Scale
+Global        1064
+Australia       90
+UK              34
+US               4
+Austria          4
+NewZealand       1
+== Range checks (numeric) ==
+Threshold: min=0.8 max=1.0 n_na=49
+N_Ext: min=0 max=28500 n_na=0
+Total_N: min=1 max=300000 n_na=0
+Percent: min=0.0 max=1.0 n_na=0
+Weight: min=1 max=43578 n_na=0
+Logit: min=-7.901377354 max=4.875197323 n_na=0
+Pre_Ind_Rise: min=0.8 max=7.6 n_na=10
+Year: min=1992 max=2014 n_na=0
+Year_Pred: min=2020 max=2106 n_na=0
+== Percent consistency check vs N_Ext/Total_N ==
+Wrote reports/percent_check_top25.csv
+Top diff summary:
+ N_Ext  Total_N  Percent  pct_calc  abs_diff
+     2        5     0.32  0.400000  0.080000
+     2        5     0.46  0.400000  0.060000
+     2       11     0.15  0.181818  0.031818
+     9       13     0.72  0.692308  0.027692
+     3       18     0.14  0.166667  0.026667
+    12       18     0.64  0.666667  0.026667
+     3       14     0.19  0.214286  0.024286
+     1       13     0.10  0.076923  0.023077
+     6       24     0.23  0.250000  0.020000
+     9       11     0.80  0.818182  0.018182
+Done. Wrote reports/missingness_by_col.csv and reports/percent_check_top25.csv

@@ -2,7 +2,7 @@
 
 ### Overview
 
-This project implements a reproducible Linux (WSL) + R data analysis pipeline to explore extinction risk estimates from the [Urban (2015)](https://github.com/CSB-book/CSB/blob/master/data_wrangling/data/Urban2015_data.csv) dataset. The workflow emphasizes data validation, lightweight preprocessing, and statistical analysis without reliance on databases, making it portable and transparent.
+This project implements a reproducible Linux (WSL) + R data analysis pipeline to explore extinction risk estimates from the [Urban (2015)](https://github.com/CSB-book/CSB/blob/master/data_wrangling/data/Urban2015_data.csv) dataset from [CSB](https://github.com/CSB-book?tab=repositories). The workflow emphasizes data validation, lightweight preprocessing, and statistical analysis without requiring a database, making it portable and transparent.
 
 The dataset contains study-level extinction estimates across taxa, regions, prediction years, and modeling assumptions.
 
@@ -41,7 +41,7 @@ chmod +x scripts/*.sh # make scripts executable
 ./scripts/run_all.sh # Run full pipeline end-to-end
 ```
 
-or run step-by-step.
+Or run step-by-step.
 
 ```{bash}
 ./scripts/01_profile_validate.sh
